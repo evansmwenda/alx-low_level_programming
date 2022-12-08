@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /*
- * main - entry point
+ * main: Entry point
  *
- * Description - prints with proper grammar text
+ * Description: prints with proper grammar text
  *
- * Return  - returns success which is 0
- *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
