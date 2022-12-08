@@ -3,9 +3,9 @@
 /**
  * main - entry point
  *
- * Description: prints "and that piece of art is useful" to standard error description
+ * Description: prints "and that piece of art is useful" to standard error desc
  *
- * return: Always 1 (Error)
+ * Return: Always 1 (Success)
  */
 
 int main(void)
