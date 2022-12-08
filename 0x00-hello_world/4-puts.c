@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * Main - entry point of program
- * 
- * Description - prints text and returns with 0 (success)
+ * main - Entry point
  *
- * Return - returns success
+ * Description: prints "Programming is like building a multilingual puzzle"
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
