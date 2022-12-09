@@ -5,17 +5,18 @@
  *
  * Description - prints alphabetical characters a-zA-Z in lower,uppercases
  *
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-        char i,j;
-        for(i='a';i<='z';i++)
+        char i, j;
+
+        for (i = 'a'; i <= 'z'; i++)
         {
                 putchar(i);
         }
-	for(j='A';j<='Z';j++)
+	for (j = 'A'; j <= 'Z'; j++)
         {
                 putchar(j);
         }
