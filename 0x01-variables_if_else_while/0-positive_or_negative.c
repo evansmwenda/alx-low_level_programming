@@ -5,10 +5,10 @@
 /**
  * main - entry point
  *
- * Description - program will assign a random number to the variable n each
+ *Description - program will assign a random number to the variable n each
  * time
  *
- * Return - Always 0 (Success)
+ *Return - Always 0 (Success)
  */
 int main(void)
 {
