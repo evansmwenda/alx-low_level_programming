@@ -5,7 +5,7 @@
 /**
  * main - entry point
  *
- * Description - prints whether a number is positive or negative
+ * Description - program will assign a random number to the variable n each time
  *
  * Return - Always 0 (Success)
  */
