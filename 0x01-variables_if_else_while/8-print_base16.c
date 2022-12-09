@@ -1,21 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - print the letters of the alphabet
  *
- * Description - prints single digit numbers
+ * Description: print the letters of the alphabet except e, q
  *
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-        int i=48;
-        while(i < 68)
-        {
-                putchar(i);
+	int i = 0;
+
+	while (i < 48)
+	{
+		if (i < 10)
+			putchar(i + '0');
+		else if (i > 41)
+			putchar(i - 10 + 'A');
 		i++;
-        }
-        putchar('\n');
-        return (0);
+	}
+	putchar(10);
+
+	return (0);
 }
