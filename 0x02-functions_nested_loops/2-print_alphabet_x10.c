@@ -10,16 +10,18 @@
 void print_alphabet_x10(void)
 {
 	int i = 10;
+	char letter = 'a';
 
 	while (i < 10)
 	{
-		char c;
+		letter = 'a';
 
-		for (c = "a"; c <= "z"; c++)
+		while (letter <= 'z')
 		{
-			_putchar(c);
+			_putchar(letter);
+			letter++;
 		}
+		_putchar('\n');
 		i++;
 	}
-	_putchar('\n');
 }
