@@ -6,7 +6,7 @@
 * Return: void
 */
 
-int more_numbers(void)
+void more_numbers(void)
 {
 	int line, n, repeat, limit;
 
@@ -34,5 +34,4 @@ int more_numbers(void)
 		n = '0';
 		limit = '9';
 	}
-	return (0);
 }
