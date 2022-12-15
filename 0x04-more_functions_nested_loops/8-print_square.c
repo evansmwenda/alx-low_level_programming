@@ -7,25 +7,25 @@
 *
 * Return: void
 */
+
 void print_square(int size)
 {
-	int a = 0;
-	int b = 0;
+	int row;
+	int column;
 
-	if (size < 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		while (b < size)
+		for (row = 0; row < size; row++)
 		{
-			for (a = 0; a < size; a++)
+			for (column = 0; column < size; column++)
 			{
 				_putchar('#');
 			}
-			b++;
+			_putchar('\n');
 		}
+	}
+	else
+	{
 		_putchar('\n');
 	}
 }
