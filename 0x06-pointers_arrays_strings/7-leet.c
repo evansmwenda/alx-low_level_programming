@@ -10,22 +10,24 @@
 
 char *leet(char *s)
 {
-	int i, j = 0;
-	int uc[] = {65, 69, 79, 84, 76};
-	int lc[] = {97, 101, 111, 116, 108};
-	int n[] = {52, 51, 48, 55, 49}
+        int i, c = 0;
+        int sl[] = {97, 101, 111, 116, 108};
+        int ul[] = {65, 69, 79, 84, 76};
+        int n[] = {52, 51, 48, 55, 49};
 
-	while (s[i] != '\0')
-	{
-		for (j = 0; j < 5; j++)
-		{
-			if (s[i] == uc[j] || s[i] == lc[j])
-			{
-				s[i] = n[j];
-				break;
-			}
-		}
-		i++;
-	}
-	return (s);
+
+        while (s[c] != '\0')
+        {
+
+                for (i = 0; i < 5; i++)
+                {
+                        if (s[c] == sl[i] || s[c] == ul[i])
+                        {
+                                s[c] = n[i];
+                                break;
+                        }
+                }
+                c++;
+        }
+        return (s);
 }
