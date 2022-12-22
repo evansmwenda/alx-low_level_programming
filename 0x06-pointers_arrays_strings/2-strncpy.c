@@ -7,23 +7,21 @@
 *@src: pointer to source
 *@n: integer with amount of bytes to copy
 *
-* Return: destination
+* Return: dest with src
 */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0;
-	int j;
+        int i;
 
+        for (i = 0; i < n && src[i] != '\0'; i++)
+                dest[i] = src[i];
 
-	for (j = 0; j < n && src[j] != '\0'; j++)
-	{
-		dest[j] = src[j];
-	}
-	while (j < n)
-	{
-		dest[j] = '\0';
-		j++;
-	}
-	return (dest);
+        while (i < n)
+        {
+                dest[i] = '\0';
+                i++;
+        }
+
+        return (dest);
 }
