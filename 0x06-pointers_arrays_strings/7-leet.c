@@ -20,9 +20,12 @@ char *leet(char *s)
 		for (j = 0; j < 5; j++)
 		{
 			if (s[i] == uc[j] || s[i] == lc[j])
+			{
 				s[i] = n[j];
 				break;
+			}
 		}
 		i++;
 	}
+	return (s);
 }

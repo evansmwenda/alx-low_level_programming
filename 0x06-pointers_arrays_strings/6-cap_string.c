@@ -7,29 +7,22 @@
 *
 * Return: updated string
 */
+
 char *cap_string(char *s)
 {
-	int i;
-
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		prev = i - 1;
+	int i = 0;
+	
+	while (s[i] != '\0')
+        {
 		if (s[i] >= 'a' && s[i] <= 'z')
-		{
-			if (i == 0)
-				s[i] = s[i] - 32;
-			else if (s[prev] >= 9 && s[prev] <= 10)
-				s[i] = s[i] - 32;
-			else if (s[prev] >= 32 && s[prev] <= 34)
-				s[i] = s[i] - 32;
-			else if (s[prev] >= 40 && s[prev] <= 41)
-				s[i] = s[i] - 32;
-			else if (s[prev] == 46 || s[prev] == 59 || s[prev] == 63)
-				s[i] = s[i] - 32;
-			else if (s[prev] == 123 || s[prev] <= 125)
-				s[i] = s[i] - 32;
-		}
-	}
-	return (s);
+                {
+                        if (i == 0 || s[i - 1] == 32 || s[i - 1] == 9 || s[i - 1] == 10 || s[i - 1] == 44 || s[i - 1] == 59 || s[i - 1] == 46 || s[i - 1] == 33 || s[i - 1] == 63 || s[i - 1] == 34 || s[i - 1] == 40 || s[i - 1] == 41 || s[i - 1] == 123 || s[i - 1] == 124)
+                        {
+                                s[i] = s[i] - 32;
+                        }
+
+                }
+                i++;
+        }
+        return (s);
 }
